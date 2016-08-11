@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>第五章习题</title>
+</head>
+<body>
+	<script language="javascript">
+		// function f(x){
+		// 	return 4*x*x+3*x+2;
+		// }
+		// var x;
+		// x = prompt("请输入你想要输入的数：");
+		// alert("f(x)=" + f(x));
+		// 第二题
+		// function min(x,y){
+		
+		// 	return x<y?x:y
+		
+		// }
+		// var x,y;
+		// x = prompt("请输入x");
+		// y = prompt("请输入y");
+		// alert("较小值为：" + min(x,y));
+		// 第三题
+		// var	n=0,x;
+		// for(x=1;x<=1000;x++){
+		// 	if(x%3==0 && x%5==0 && x%7==0){
+		// 		n += 1;
+		// 		document.write(x + " ");
+		// 		if(n%6 == 0)
+		// 			document.write("<br/>");
+		// 	}
+		// }
+		// function isThatNumber(x){
+		// 	return x%3==0 && x%5==0 && x%7==0;
+		// }
+		// var x,n=0;
+		// for(x=1;x<=1000;x++){
+		// 	if (isThatNumber(x)){
+		// 		n += 1;
+		// 		document.write(x + " ");
+		// 		if (n%6==0)
+		// 			document.write("<br/>");
+		// 	}
+		// }
+		// 第四题
+		// function primeNumber(x){
+			
+		// 	if (x<1) 
+		// 		return false;
+		// 	var i;
+		// 	for(i=2;i<x;i++)
+		// 		if (x%i == 0)
+		// 			return false;
+		// 			return true;
+				
+				
+		// }
+		// var x,n=0;
+		// for(x=100;x<=1000;x++){
+		// 	if (primeNumber(x)){
+		// 		document.write(x + " ");
+		// 		n += 1;
+		// 		if(n%6==0)
+		// 			document.write("<br/>");
+		// 	} 
+		// }
+		// 分号问题？？
+		// 第五题
+		// function factorial(x){
+		// 	if (x<=1) {
+		// 		return 1;
+		// 	}
+		// 	return x*(factorial(x-1));
+		// }
+		
+		// document.write(factorial(12)-factorial(10));
+		// function factorial(x){
+		// 	var i,sum=1;
+		// 	for(i=1;i<=x;i++)//i==1||i==2
+		// 		sum *= i;
+		// 		return sum;
+		// }
+		// document.write(factorial(12)-factorial(10));
+		//第六题
+
+
+		function draw(n)
+		{
+			var i,j;
+			document.write("<pre>");
+			for(i=1;i<=n;i++)
+		{
+			for(j=1;j<=n-i;j++) document.write(" ");
+			for(j=1;j<=i;j++) document.write("* ");
+			document.write("<br>");
+		}
+		document.write("</pre>");
+		}
+		draw(5);
+		// 第七题
+		// 非递归
+		// var n;
+		// n = prompt("n");
+		// function fibonacci(n){
+		// 	if(n <= 2){
+		// 		return 1;
+		// 	}
+		// 	var i,n1=1,n2=1,temp;
+		// 	for(i=3;i<=n;i++){
+		// 		temp = n1 + n2;
+		// 		n1 = n2;
+		// 		n2 = temp;
+		// 	}
+		// 	return temp;
+		// }
+		// document.write(fibonacci(n));
+		// 递归
+		// var n;
+		// n = prompt("n");
+		// function fibonacci(n){
+		// 	if(n <= 2){
+		// 		return 1;
+		// 	}
+		// 	return fibonacci(n-1) + fibonacci(n-2);
+		// }
+		// document.write(fibonacci(n));
+		// 第八题
+
+		// function fn(n){
+		// 	var PI = 0;
+		// 	for(var i=1; i<=n; i++){
+				
+		// 		PI += 4 * Math.pow(-1,i-1) / (2*i - 1);
+		// 	}
+		// 	return PI;
+		// }
+		// var arr = new Array(100,500,1000,10000);
+		// for(var i=0; i<=arr.length; i++)
+		// 	document.write(fn(arr[i]));
+		// document.write(fn(100) + "<br/>");
+		// document.write(fn(500) + "<br/>");
+		// document.write(fn(1000) + "<br/>");
+		// document.write(fn(10000) + "<br/>");
+		// 第九题
+		// var a,b,c;
+		// a = Math.floor(Math.random()*9)+1;
+		// b = Math.floor(Math.random()*9)+1;
+		// c = Math.floor(Math.random()*9)+1;
+		// if (a == 8 || b == 8 || c == 8) {
+		// 	document.write("success");
+		// }
+		// document.write(a + "<br/>" + b + "<br/>" + c);
+	</script>
+</body>
+</html>

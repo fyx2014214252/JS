@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first js</title>
+	<html lang="en">
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+
+
+<script language="javascript">
+// 	var d = new Date()
+// var time = d.getHours()
+
+// if (time < 10) 
+// {
+// document.write("<b>早安</b>")
+// }
+// else
+// {
+// document.write("<b>祝您愉快</b>")
+// }
+	// function getMax(x,y){
+	// 	var max;
+	// 	max = x>y?x:y
+	// 	return max;
+	//  }
+
+	// var x=Math.random();
+	// var y=Math.random();
+	//  var foij=getMax(x,y);
+	// document.write(x+"<br/>");
+	// document.write(y+"<br/>");
+	// document.write(foij);
+	// function getleapyear(year){
+	// 	if((year%4==0&&year%100!=0)||year%400==0){
+	// 	return true;
+	// 	}
+	// 	return false;
+	// }
+	// 	var today = new Date(); 
+	// 	var year = today.getFullYear(); 
+	// 	var is=getleapyear(year);
+	// 	if(is){
+	// 		document.write(year+"是闰年");
+	// 	}else{
+	// 		document.write(year+"不是闰年")
+	// 	}
+	function jie(num){
+		if(num<=1){
+			return 1;
+		}
+			return num * (jie(num-1));
+	}
+	var num = 10;
+	document.write(num+"的阶乘是"+jie(num)+'<br/>');
+	// var sum=0;
+	// for (var i=1;i<=10;i++) {
+	// 		sum += jie(i);
+	// }
+	// document.write(sum);
+	// var age;
+	// age = prompt("请输入你的年龄:")
+	// if(age<14)
+	// 	document.write("你是儿童");
+	// else if(age<24)
+	// 	document.write("你是青少年");
+	// else if(age<40)
+	// 	document.write("你是青年");
+	// else if(age<60)
+	// 	document.write("你是中年");
+	// else 
+	// 	document.write("你是老年");
+	// var n;
+	// n = prompt("请输入n");
+	// if(n==0)
+	// document.write("星期天");
+	// else if(n==1)
+	// document.write("星期一");
+	// else if(n==2)
+	// document.write("星期二");
+	// else if(n==3)
+	// document.write("星期三");
+	// else if (n==4) 
+	// document.write("星期四");
+	// else if (n==5) 
+	// document.write("星期五");
+	// else if (n==6) 
+	// document.write("星期六");
+	// var n;
+	// n = prompt("请输入数字");
+	// n = parseInt(n)
+	// switch(n)
+	// {
+	// 	case 0:
+	// 	document.write("今天是星期天");
+	// 	break;
+	// 	case 1:
+	// 	document.write("今天是星期一");
+	// 	break;
+	// 	case 2:
+	// 	document.write("今天是星期二");
+	// 	break;
+	// 	case 3:
+	// 	document.write("今天是星期三");
+	// 	break;
+	// 	case 4:
+	// 	document.write("今天是星期四");
+	// 	break;
+	// 	case 5:
+	// 	document.write("今天是星期五");
+	// 	break;
+	// 	case 6:
+	// 	document.write("今天是星期六");
+	//     break;
+	// 	default:
+	// 	document.write("输入有误");
+	// 	break;
+	// }
+
+
+	// var weekday;
+	// weekday = prompt("请输入一个表示今天是星期几的数字(0:星期日；1: 星期一；…；6:星期六):","0");
+	// // weekday=parseInt(weekday)
+	// switch(weekday)
+ //    {
+ //    case 0: document.write("今天是星期日");break;
+ //    case 1: alert("今天是星期一");break;
+ //    case 2: alert("今天是星期二");break;
+ //    case 3: alert("今天是星期三");break;
+ //    case 4: alert("今天是星期四");break;
+ //    case 5: alert("今天是星期五");break;
+ //    case 6: alert("今天是星期六");break;
+ //    default:
+	//     alert("输入有误");break;
+ //    }
+ // 第五题
+ // document.write("1" + '<br/>');
+ // document.write("1 2" + '<br/>');
+ // document.write("1 2 3" + '<br/>');
+ // document.write("1 2 3 4" + '<br/>');
+ // document.write("1 2 3 4 5" + '<br/>');
+ // 第六题
+ 
+	// var i,line;
+	// for(line=1;line<=5;line++)
+	// {
+	// 	document.write("    ");
+	// 	for(i=1;i<=5-line;i++) document.write(" ");
+	// 	for(i=1;i<=line;i++)
+	// 	{
+	// 		document.write("*");
+	// 		if (i>0) document.write(" ");
+	// 	}
+	// 	document.write("<br>");
+	// }
+
+
+// 第七题
+// var x;
+// for(x=100;x<1000;x++){
+// if(x%4==2 && x%7==3 && x%9==5){
+// 	document.write(x + '<br/>');
+// 	}
+// }
+// 第八题
+// var x,a,b,c;
+// for(x=1000;x<10000;x++){
+// 	a = Math.floor(x/1000);
+// 	b = Math.floor(x%1000/100);
+// 	c = Math.floor(x%1000%100/10);
+// 	if(x%13==0 && b+c==a){
+// 		document.write(x + '<br/>');
+// 	}
+// }
+
+</script>
+</body>
+</html>

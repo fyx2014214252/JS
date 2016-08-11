@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第六章习题</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+// 第一题
+	// var x;
+	// x = prompt("请输入x:");
+	// document.write(x + "的平方是" + Math.pow(x,2) + "<br/>" + 
+	// 	            x + "的平方根是" + Math.sqrt(x) + "<br/>" + 
+	// 	            x + "的自然对数是" + Math.log(x));
+// 第二题
+	// var x;
+	// x = Math.floor(Math.random()*101);
+	// document.write(x);
+// 第三题
+// var d = new Date();
+// alert("现在是" + d.getFullYear() + "年" + d.getMonth() + "月" + d.getDate() + "日" + d.getHours() + "点" + d.getMinutes() + "分" + d.getSeconds() + "秒" + "星期" + d.getDay() + " 欢迎你的到访！"); 
+// 第四题
+// var s;
+// s = prompt("请输入一个含有数字的字符串：","")
+// function CollectDigits(s){
+	
+// 	var result = '';
+// 	for(var i=0; i<=s.length; i++){
+// 		var ch = s.charAt(i);
+// 		if (ch >= '0' && ch <= '9') {
+// 			result += ch;
+// 		}
+// 	}
+// 	return result;
+// }
+// document.write(CollectDigits(s));
+//第五题
+// var s1,s2;
+// s1 = prompt("请输入一个字母字符串","");
+// s2 = prompt("请输入一个数字字符串","");
+// function Merge(s1,s2){
+// 	var result = '';
+// 	var max_len,i;
+// 	max_len = Math.max(s1.length,s2.length);
+// 	for(i=0; i<=max_len;i++){
+// 		if (i<s1.length) result += s1.charAt(i);
+// 		if (i<s2.length) result += s2.charAt(i);
+// 	}
+// 	return result;
+// }
+// document.write(Merge(s1,s2));
+//第六题
+var soceres = new Array(7);
+var sum = 0,i,nb;
+for(i=0; i<soceres.length; i++){
+	soceres[i] = parseFloat(prompt("请输入第"+(i+1)+"门的成绩",""));
+	sum += soceres[i];
+}
+document.write("总成绩为；"+ sum + "<br/>");
+document.write("平均分为；" + sum/soceres.length + "<br/>");
+document.write("不及格的成绩为：")
+for(i=0; i<soceres.length; i++){
+	if (soceres[i]<60) {
+		document.write(soceres[i] + "&nbsp")
+	}
+}
+</script>
+</body>
+</html>
