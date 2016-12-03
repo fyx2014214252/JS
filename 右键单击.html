@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>右键单击</title>
+	<meta charset="utf-8">
+	<style>
+	*{
+		margin: 0; 
+		padding: 0;
+		list-style: none; 
+	}
+	#ul1{
+		width: 50px;
+		height: 93px;
+		border: 1px solid #000;
+		display: none;
+	}
+	#ul1 li{
+		width: 50px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		border-bottom: 1px dotted #000;
+	}
+	body{
+		height: 2000px;
+		width: 1000px;
+	}
+	</style>
+</head>
+<body>
+<ul id="ul1">
+	<li>菜单1</li>
+	<li>菜单2</li>
+	<li>菜单3</li>
+</ul>
+<script type="text/javascript">
+	document.body.oncontextmenu = function(e){
+		e = e||event;
+	var oMenu = document.getElementById('ul1');	
+	oMenu.style.display = "block";
+	oMenu.style.position = "absolute";
+	oMenu.style.top = e.clientY + "px";
+	oMenu.style.left = e.clientX + "px";
+	
+		return false;
+	};
+</script>
+</body>
+</html>
